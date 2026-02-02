@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>bomberos</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/Register-form.css">
+    <link rel="stylesheet" href="assets/css/Table-with-search.css">
+    <link rel="stylesheet" href="assets/css/VentasPro-Login.css">
+</head>
+
+<body>
+    <div class="modal fade" role="dialog" tabindex="-1" id="registrar">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form>
+                        <div class="rf-register-form">
+                            <form class="rg-form" style="margin-top: -19px;">
+                                <h2><i class="fa fa-address-book"></i>&nbsp;Registrar</h2>
+                                <div class="rf-input-container" style="margin-top: 18px;"><i class="fa fa-star fa fa-user rf-icon" style="font-size: 21px;"></i><input class="form-control rf-input-field" type="text" placeholder="Nombres"></div>
+                                <div class="rf-input-container"><i class="fa fa-id-card fa fa-envelope rf-icon" style="font-size: 21px;"></i><input class="form-control rf-input-field" type="text" placeholder="Apellidos"></div>
+                                <div class="rf-input-container"><i class="fa fa-graduation-cap fa fa-envelope rf-icon" style="font-size: 21px;"></i><select class="form-select">
+                                        <option value="">Seleccione</option>
+                                        <option value="Sub. Teniente">Sub. Teniente</option>
+                                        <option value="Teniente">Teniente</option>
+                                        <option value="Capitán">Capitán</option>
+                                        <option value="Teniente Brigadier">Teniente Brigadier</option>
+                                        <option value="Brigadier">Brigadier</option>
+                                        <option value="Brigadier Mayor">Brigadier Mayor</option>
+                                        <option value="Brigadier General">Brigadier General</option>
+                                    </select></div>
+                                <div class="rf-input-container"><i class="fa fa-keyboard-o fa fa-envelope rf-icon" style="font-size: 21px;"></i><input class="form-control rf-input-field" type="text" placeholder="Código"></div>
+                                <div class="rf-input-container"><i class="fa fa-star fa fa-key rf-icon" style="font-size: 21px;"></i><input class="form-control rf-input-field" type="password" placeholder="Contraseña"></div><button class="btn btn-primary rf-btn" type="button">Registrar</button>
+                            </form>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <nav class="navbar navbar-expand-md navbar-light" style="background: #de0909;margin-right: -14px;">
+                <div class="container-fluid">
+                    <div><a class="navbar-brand" href="#" style="color: rgb(255,255,255);">&nbsp; <img src="assets/img/237c7418-9f63-484f-b745-2e812bc2bcc3-removebg-preview.png" style="width: 26px;margin-right: -7px;">&nbsp;Sistema de Asistencia</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button></div>
+                    <div class="collapse navbar-collapse" id="navcol-2">
+                        <ul class="navbar-nav ms-auto" id="desktop-toolbar">
+                            <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#" style="color: rgb(255,255,255);">&nbsp;<i class="fa fa-cog"></i>&nbsp;Opciones</a>
+                                <div class="dropdown-menu" style="margin-left: -38px;"><a class="dropdown-item" href="#"><i class="fa fa-user fa-fw"></i> Registrarse</a><a class="dropdown-item" href="#"><i class="fa fa-laptop fa-fw"></i>Iniciar Sesión</a></div>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav" id="desktop-toolbar">
+                            <li class="nav-item"></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div id="main" style="margin-right: -15px;background: #de0909;">
+                <div class="text-center" id="info" style="height: 504px;margin-top: 30px;"><img id="ventaspro-logo" src="assets/img/237c7418-9f63-484f-b745-2e812bc2bcc3.jpg" width="200" style="width: 93px;">
+                    <h3 class="text-center">Marcador de Asistencia</h3>
+                    <p class="text-center">Ingrese su código y clave</p>
+                    <form class="text-start" id="form-login">
+                        <div class="mb-3"><label class="form-label" id="lbl-usuario" for="txt-usuario">Código</label><input class="form-control" type="text" id="txt-usuario"></div>
+                        <div class="mb-3"><label class="form-label" id="lbl-password" for="txt-password">Clave</label><input class="form-control" type="password" id="txt-password"></div>
+                    </form><button class="btn btn-primary" data-bss-hover-animate="pulse" id="btn-sesion" type="submit" style="--bs-primary: #256db4;--bs-primary-rgb: 37,109,180;background: #256db4;">Marcar Asistencia</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9" style="background: url(&quot;assets/img/92ecd90c-b345-427d-bf11-9c1607d5dfd0.jpg&quot;) center / auto no-repeat;">
+            <div class="card" style="margin-top: 8px;margin-right: 12px;">
+                <div class="card-header">
+                    <h5 class="mb-0"><i class="fa fa-user" style="margin-right: 3px;"></i><span style="color: var(--bs-heading-color); background-color: var(--bs-card-cap-bg);">Registro de Asistencia</span></h5>
+                </div>
+                <div class="card-body">
+<div class="form-group pull-right">
+    <input type="text" class="search form-control" placeholder="Buscar">
+</div><br>
+<span class="counter pull-right"></span><br>
+<div class="table-responsive">
+<table class="table table-hover table-bordered results  text-nowrap">
+  <thead>
+    <tr class="table-danger">
+      <th>N°</th>
+      <th>Nombre</th>
+      <th class="text-center">Fecha</th>
+      <th>Hora Entrada</th>
+      <th>Hora Salida</th>
+    </tr>
+    <tr class="warning no-result">
+      <td colspan="4"><i class="fa fa-warning"></i> No result</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Dennys Dávila Mozombite</td>
+      <td class="text-center">29/01/2025</td>
+      <td>10:00 a.m</td>
+      <td>4:00 p.m</td>
+    </tr>
+      <tr>
+      <th scope="row">2</th>
+      <td>Dennys Dávila Mozombite</td>
+      <td class="text-center">29/01/2025</td>
+      <td>10:00 a.m</td>
+      <td>4:00 p.m</td>
+    </tr>
+      <tr>
+      <th scope="row">3</th>
+      <td>Dennys Dávila Mozombite</td>
+      <td class="text-center">29/01/2025</td>
+      <td>10:00 a.m</td>
+      <td>4:00 p.m</td>
+    </tr>
+      <tr>
+      <th scope="row">4</th>
+      <td>Dennys Dávila Mozombite</td>
+      <td class="text-center">29/01/2025</td>
+      <td>10:00 a.m</td>
+      <td>4:00 p.m</td>
+    </tr>
+   
+  </tbody>
+    </table></div></div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/Responsive-Active-Navbar-script.js"></script>
+    <script src="assets/js/Table-with-search-table.js"></script>
+</body>
+
+</html>
